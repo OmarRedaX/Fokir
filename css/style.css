@@ -1,0 +1,553 @@
+body {
+  margin: 0;
+}
+
+.first-page {
+  height: 100vh;
+  background-image: url(images/hero\ img.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.op-black {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.nav-bar {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.nav-bar li {
+  float: right;
+  padding-right: 13px;
+}
+
+.nav-bar a {
+  font-size: 18px;
+  color: #111;
+  text-decoration: none;
+  color: aliceblue;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.nav-bar a:hover {
+  color: rgb(255, 48, 91);
+}
+
+.nav-bar h3 {
+  float: left;
+  color: rgb(255, 48, 91);
+  font-size: 20px;
+  font-weight: 800;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.item {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 40%;
+  font-family: sans-serif;
+}
+
+.item p {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  line-height: 26px;
+}
+
+.item h1 {
+  font-size: 63px;
+  font-weight: 700;
+  color: rgb(255, 48, 91);
+  line-height: 50px;
+  margin: 0;
+}
+
+.animation {
+  font-size: 26px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 31px;
+  animation-name: ani;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes ani {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-two {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-two .bord {
+  position: absolute;
+  left: 25%;
+  border-style: solid;
+  border-width: 9px;
+  border-color: #555555;
+}
+
+.section-two .bord .profile {
+  position: relative;
+  left: 25px;
+  top: 20px;
+  transition: transform 1s;
+  overflow: hidden;
+}
+
+.icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translatey(100%);
+}
+
+.section-two .bord .profile:hover .icons {
+  opacity: 0.7;
+  transform: translatey(0%);
+}
+
+.content {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+}
+
+.content .dash {
+  width: 5px;
+  height: 25px;
+  background-color: rgb(255, 48, 91);
+  position: absolute;
+}
+
+.content h2 {
+  padding-left: 15px;
+  font-family: sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgb(51, 51, 51);
+  margin: 2px;
+}
+
+.content p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(51, 51, 51);
+  padding-top: 7px;
+}
+
+.content .dot {
+  width: 100%;
+  height: 0px;
+  border-bottom: 1px dashed #999999;
+}
+
+.content ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.content ul li {
+  color: #555555;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 25px;
+  white-space: nowrap;
+}
+
+.content ul li span {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.list {
+  float: left;
+}
+
+.list-two {
+  float: left;
+  margin-left: 80px;
+}
+
+.clear {
+  clear: both;
+}
+
+.bottons button {
+  background: #ff305b none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 24px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.bottons img {
+  width: 30px;
+}
+
+.bottons button:hover {
+  background-color: tomato;
+}
+
+.empty-section {
+  width: 100%;
+  height: 500px;
+}
+
+.section-three {
+  text-align: center;
+  position: relative;
+  background-color: #f1f1f1;
+  overflow: auto;
+  margin-top: 60px;
+  padding-bottom: 70px;
+}
+
+.section-three h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding-top: 70px;
+}
+
+.lines-one {
+  width: 75px;
+  height: 1px;
+  background-color: #ff305b;
+  position: relative;
+  left: 48%;
+  margin: 3px;
+}
+
+.lines-two {
+  width: 150px;
+  height: 1px;
+  background-color: #ff305b;
+  position: relative;
+  left: 46%;
+}
+
+.section-three .container {
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+  transition: transform 0.5;
+}
+
+.section-three .contents {
+  width: 23%;
+  float: left;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+
+.section-three img {
+  width: 10%;
+  transition: transform 0.5s;
+}
+
+.section-three .container .contents:hover {
+  background-color: white;
+}
+
+.section-three .container .contents:hover img {
+  transform: scale(1.5);
+}
+
+.section-four {
+  width: 100%;
+  height: 500px;
+  margin-top: 55px;
+  text-align: center;
+  position: relative;
+}
+
+.section-four h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding-top: 70px;
+}
+
+.section-four .port {
+  position: absolute;
+  left: 41%;
+}
+
+.section-four .port p {
+  float: left;
+  margin: 10px;
+  margin-top: 45px;
+}
+
+.section-four .images-port {
+  width: 60%;
+  margin: auto;
+}
+
+.section-four .images-port .photos {
+  width: 30%;
+  float: left;
+  margin: 10px 5px;
+  position: relative;
+}
+
+.section-four .images-port .photos img {
+  width: 100%;
+}
+
+.empty-section-two {
+  height: 110px;
+}
+
+.b {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.5s;
+}
+
+.section-four .images-port .photos:hover .b {
+  background-color: #1111117e;
+}
+
+.numbers {
+  background-color: #f1f1f1;
+  margin-top: 500px;
+  padding-top: 100px;
+  width: 100%;
+  overflow: auto;
+}
+
+.numbers .con {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  overflow: auto;
+  padding-bottom: 70px;
+}
+
+.numbers .states {
+  width: 25%;
+  float: left;
+}
+
+.numbers .states img {
+  width: 10%;
+}
+
+.cart {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.cart h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.cart-content {
+  background-color: #f1f1f1;
+  width: 35%;
+  height: 200px;
+  position: relative;
+  left: 32%;
+  top: 50px;
+  overflow: hidden;
+}
+
+.triangle {
+  background-color: #ff305b;
+  height: 150px;
+  width: 100px;
+  position: absolute;
+  transform: skewx(-50deg);
+  top: 0;
+  left: 0;
+}
+
+.pf {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 50px;
+  left: 40px;
+  border-radius: 50%;
+}
+
+.pf img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.info {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  right: 0;
+}
+
+.info p {
+  color: #999999;
+}
+
+.blog {
+  background-color: #f1f1f1;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.blog h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.blog .cont {
+  width: 60%;
+  margin: auto;
+  overflow: auto;
+}
+
+.post img {
+  width: 100%;
+}
+
+.blog .cont .post {
+  width: 31%;
+  float: left;
+  margin: 10px;
+  background-color: white;
+}
+
+.blog a {
+  color: #111;
+  text-decoration: none;
+}
+
+.blog p {
+  color: rgb(85, 85, 85);
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 18px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.fo {
+  width: 40%;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+}
+
+#fname {
+  width: 48%;
+  padding: 10px 10px;
+  position: absolute;
+}
+
+#email {
+  width: 48%;
+  padding: 10px 10px;
+  position: absolute;
+  right: 0;
+}
+
+#subject {
+  width: 100%;
+  padding: 10px 10px;
+  position: absolute;
+  top: 70px;
+}
+
+#m {
+  position: absolute;
+  top: 150px;
+}
+
+.fo button {
+  background-color: #ff305b;
+  color: white;
+  position: absolute;
+  top: 300px;
+  padding: 10px 20px;
+}
+
+.las {
+  background-color: #333333;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 500px;
+}
+
+.las p {
+  color: white;
+}
+
+.las span {
+  color: #ff305b;
+}
+
+
